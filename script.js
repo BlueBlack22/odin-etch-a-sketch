@@ -1,9 +1,14 @@
+const sketchpad = document.querySelector('.sketchpad');
+
+function clearSketchpad() {
+    sketchpad.innerHTML = "";
+}
+
 function createGrid(gridDensity = 16) {
     const borderWidth = 1;
     gridSize = 640 / gridDensity - 2 * borderWidth;
 
-    const sketchpad = document.querySelector('.sketchpad');
-    sketchpad.innerHTML = "";
+    clearSketchpad();
 
     for (i = 1; i <= gridDensity * gridDensity; i++) {
         const gridbox = document.createElement('div');
@@ -17,3 +22,14 @@ function createGrid(gridDensity = 16) {
 }
 
 createGrid();
+
+var gridDensityList = document.getElementById('grid-density');
+
+gridDensityList.addEventListener('change', (e) => {
+    createGrid(e.target.value);
+});
+
+const clearBtn = document.getElementById('clear-grid');
+clearBtn.addEventListener('click', () => {
+    createGrid(gridDensityList.value);
+});
