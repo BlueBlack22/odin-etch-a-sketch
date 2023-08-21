@@ -23,7 +23,7 @@ function createGrid(gridDensity = 16) {
 
 createGrid();
 
-var gridDensityList = document.getElementById('grid-density');
+let gridDensityList = document.getElementById('grid-density');
 
 gridDensityList.addEventListener('change', (e) => {
     createGrid(e.target.value);
