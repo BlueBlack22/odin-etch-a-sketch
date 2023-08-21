@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #BEB2C8;
+    margin: 0;
+}
+
+.logo {
+    color: #36413E;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.sketchpad {
+    width: 640px;
+    height: 640px;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.settings {
+    background-color: aqua;
+    font-family: Roboto, sans-serif;
+    min-width: 200px;
+    height: 640px;
+}
+
+.gridbox {
+    background-color: bisque;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    height: 38px;
+    width: 38px;
+    gap: 0;
+}
